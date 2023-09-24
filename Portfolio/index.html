@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ujjwal Singh</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header design -->.
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="nav-links active" onclick="scrollpage('home')">Home</a>
+            <a href="#about" class="nav-links" onclick="scrollpage('about')">About</a>
+            <a href="#projects" class="nav-links" onclick="scrollpage('projects')">Projects</a>
+            <a href="#contact" class="nav-links" onclick="scrollpage('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Ujjwal Singh</h1>
+            <h2>And I'm a <span>Frontend Developer</span></h2>
+            
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-gmail' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="static/myself_home.png" alt="Ujjwal Singh">
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-img">
+                    <img src="static/myself_about.png" alt="Ujjwal Singh">
+                </div>
+                <div class="about-content">
+                    <h1>About <span>Me</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel itaque fugiat, harum animi neque qui nihil quos illum suscipit, ex quae velit explicabo error? Eos cum ut obcaecati officia!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Different Languages</span><br>C/C++, Java, Python, HTML, CSS, JavaScript, BootStrap, MongoDB, SQL</li>
+                            <li><span>Problem Solving</span><br>Problem solving on different platform in C++</li>
+                            <li><span>Web Developer</span><br>Building websites using MERN Stack</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>09/2023 - 10/2023</span><br>Fullstack Developer Intern at CodSoft</li>
+                            <li><span>07/2023 - 08/2023</span><br>MERN Stack Training at Brain Mentors</li>
+                            <li><span>05/2023 - 06/2023</span><br>Fundraiser Intern at Muskurahat Foundation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.Tech from Maharaja Surajmal Institute of Technology</li>
+                            <li><span>2019-2020</span><br>Senior Secondary (XII) from Bal Bharati Public School, Dwarka</li>
+                            <li><span>2017-2018</span><br>Secondary (X) from Bal Bharati Public School, Dwarka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <img src="" alt="">
+        </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
