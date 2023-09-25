@@ -23,6 +23,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -73,6 +74,9 @@ section {
     display: none;
 }
 
+
+/* HOME SECTION */
+
 .home {
     display: flex;
     justify-content: center;
@@ -82,7 +86,15 @@ section {
 .home-img img {
     height: 30vw;
     width: 30vw;
-    margin-left: 175px;
+    margin-left: 150px;
+    border-radius: 125rem;
+    filter: drop-shadow(5px 5px 10px rgb(51, 208, 233));
+    transition: .3s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.35);
+    cursor: pointer;
 }
 
 .home-content h3 {
@@ -152,8 +164,8 @@ section {
 /* ABOUT SECTION */
 
 .about {
-    padding: 80px 40px;
-    /* color: var(--text-color); */
+    padding: 160px 40px;
+    background: var(--second-bg-color);
 }
 
 .row {
@@ -166,13 +178,17 @@ section {
     flex-basis: 35%;
 }
 
-/* .about-img img{
-    width: 100%;
-    border-radius: 10px;
-} */
 .about-img img {
-    height: 27vw;
-    width: 27vw;
+    height: 29vw;
+    width: 29vw;
+    border-radius: 175rem;
+    filter: drop-shadow(5px 5px 10px rgb(0, 217, 255));
+    transition: .3s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.35);
+    cursor: pointer;
 }
 
 .about-content {
@@ -180,7 +196,7 @@ section {
 }
 
 .about-content h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
     color: var(--text-color);
 }
@@ -189,15 +205,18 @@ section {
     color: var(--main-color);
 }
 
-.tab-titles {
-    display: flex;
-    margin: 20px 0 40px;
+.about-content p {
+    font-size: 15px;
 }
 
-.tab-links {
+.tab-titles {
+    display: flex;
+    margin: 30px 0;
+}
+.tab-titles p {
     margin-right: 50px;
-    font-size: 16.5px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 550;
     cursor: pointer;
     position: relative;
 }
@@ -210,12 +229,12 @@ section {
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
-    font-size: 11px;
+    font-size: 12.5px;
 }
 
 .tab-contents ul li span {
     color: rgb(101, 216, 225);
-    font-size: 13px;
+    font-size: 15.5px;
 }
 
 .tab-contents {
@@ -225,3 +244,74 @@ section {
 .tab-contents.active-tab {
     display: block;
 }
+
+
+/* SERVICES SECTION */
+
+.services {
+    padding: 90px 45px;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.sub-title span {
+    color: var(--main-color);
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: 50px;
+}
+
+.services-list div {
+    background: var(--second-bg-color);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 10px;
+    border-color: var(--main-color);
+    border-radius: 15px;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div:hover {
+    border: 10px;
+    border-color: var(--main-color);
+    background: #87ccdc;
+    color: var(--bg-color);
+    transform: translateY(-15px);
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 12px;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+.services-list div a:hover {
+    color: var(--bg-color);
+}
+
+
+/* PROJECTS SECTION  */
+
