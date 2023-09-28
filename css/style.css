@@ -467,6 +467,14 @@ section {
     cursor: pointer;
 }
 
+#msg{
+    font-size: 1.2rem;
+    color: #61b752;
+    margin-top: -10px;
+    display: block;
+}
+
+
 
 /* FOOTER SECTION */
 
@@ -590,6 +598,7 @@ section {
         width: 50vw;
         height: 50vw;
         margin-bottom: 4rem;
+        align-items: center;
     }
 
     .services .container h1 {
@@ -629,6 +638,7 @@ section {
     .about-img img {
         width: 70vw;
         height: 70vw;
+        align-items: center;
     }
 
     .footer {
